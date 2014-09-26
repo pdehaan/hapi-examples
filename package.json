@@ -1,0 +1,21 @@
+{
+  "name": "hapi-examples",
+  "description": "Just a bunch of HapiJS examples.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": "https://github.com/pdehaan/hapi-examples/issues",
+  "dependencies": {
+    "hapi": "6.9.0"
+  },
+  "homepage": "https://github.com/pdehaan/hapi-examples",
+  "keywords": [
+    "hapijs"
+  ],
+  "license": "WTFPL",
+  "main": "index.js",
+  "private": true,
+  "repository": "pdehaan/hapi-examples",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
