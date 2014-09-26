@@ -1,3 +1,5 @@
+'use strict';
+
 var lout = require('lout');
 var Hapi = require('hapi');
 

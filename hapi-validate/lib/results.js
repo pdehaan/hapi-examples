@@ -1,14 +1,14 @@
-"use strict";
+'use strict';
 
-var randomBytes = require("crypto").randomBytes;
+var randomBytes = require('crypto').randomBytes;
 
-var Duration = require("duration-js");
-var humanize = require("humanize-duration");
+var Duration = require('duration-js');
+var humanize = require('humanize-duration');
 
 
 /**
- * Converts a duration string (ie: "12h") into milliseconds.
- * @param  {String} str A duration string, ie: "12h" or "90m".
+ * Converts a duration string (ie: '12h') into milliseconds.
+ * @param  {String} str A duration string, ie: '12h' or '90m'.
  * @return {Number} The number of milliseconds in the specified duration string.
  */
 function d(str) {
@@ -22,7 +22,7 @@ function d(str) {
  * @return {String} A hexadecimal string.
  */
 function hexStr(len) {
-  return randomBytes(len).toString("hex").substr(0, len);
+  return randomBytes(len).toString('hex').substr(0, len);
 }
 
 
@@ -43,7 +43,7 @@ function randomElement(arr) {
  */
 function makeDates() {
   // Choose a random duration between 0 and 12 hours.
-  var dur = Math.random() * d("12h");
+  var dur = Math.random() * d('12h');
   var endDate = new Date(Date.now() - dur);
   var startDate = new Date(endDate.getTime() - (Math.random() * dur));
   // Zero out those milliseconds.
@@ -59,7 +59,7 @@ function makeDates() {
 
 
 /**
- * Creates a random id string in the format of "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx".
+ * Creates a random id string in the format of 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'.
  * @return {String} A random test id.
  */
 function makeId() {
@@ -70,29 +70,29 @@ function makeId() {
     hexStr(4),
     hexStr(12)
   ];
-  return values.join("-");
+  return values.join('-');
 }
 
 
 /**
- * Creates a random test name with the format "{string}.{string}.{number}".
+ * Creates a random test name with the format '{string}.{string}.{number}'.
  * @return {String} A random test name.
  */
 function makeTest() {
   var prefixes = [
-    "load",
-    "stress",
-    "alpha",
-    "champion",
-    "turbo",
-    "hyper",
-    "hadouken"
+    'load',
+    'stress',
+    'alpha',
+    'champion',
+    'turbo',
+    'hyper',
+    'hadouken'
   ];
   var suffixes = [
-    "StressTest.test_storage_session",
-    "LoopTest.test_all",
-    "LoopTest.test_some",
-    "FindMyDevice.smoke_test"
+    'StressTest.test_storage_session',
+    'LoopTest.test_all',
+    'LoopTest.test_some',
+    'FindMyDevice.smoke_test'
   ];
   // Get a random number between 0 and 9.
   var version = Math.floor(Math.random() * 9.9) % 10;
@@ -101,21 +101,21 @@ function makeTest() {
     randomElement(prefixes),
     randomElement(suffixes),
     version
-  ].join(".");
+  ].join('.');
 }
 
 
 /**
  * Creates a random result object.
- * @param  {Boolean} active Whether or not the result is "active". (Default is false)
+ * @param  {Boolean} active Whether or not the result is 'active'. (Default is false)
  * @return {Object} An object containing the following properties: `active`, `id`, `test`, `startDate`, `endDate`, `diff`, `success`.
  */
 function makeResult(active) {
   var test = makeTest();
   var dates = makeDates();
   // If the duration is less than 3 minutes, let's pretend it's a HealthCheck.
-  if (dates.diff < d("3m")) {
-    test = "HealthCheck";
+  if (dates.diff < d('3m')) {
+    test = 'HealthCheck';
   }
   var obj = {
     active: !!active,
