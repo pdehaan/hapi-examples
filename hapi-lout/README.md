@@ -15,7 +15,7 @@ Once the hapi server is started, open a browser and go to http://localhost:3000/
 
 To exclude a route from the lout generated documentation, set `lout` to `false` in the route configuration. For example,
 
-```json
+```js
 {
   method: 'GET',
   path: '/private',
