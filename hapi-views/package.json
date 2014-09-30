@@ -1,0 +1,27 @@
+{
+  "name": "hapi-views",
+  "description": "Playing w/ Hapi.js views.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": "https://github.com/pdehaan/hapi-examples/issues",
+  "dependencies": {
+    "handlebars": "2.0.0",
+    "hapi": "6.9.0"
+  },
+  "homepage": "https://github.com/pdehaan/hapi-examples/tree/master/hapi-views",
+  "keywords": [
+    "hapi",
+    "views"
+  ],
+  "license": "WTFPL",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pdehaan/hapi-examples.git"
+  },
+  "scripts": {
+    "test": "eslint .",
+    "start": "node server.js",
+    "postinstall": "bower update"
+  }
+}

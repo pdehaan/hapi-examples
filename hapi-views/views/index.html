@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="/assets/styles/app.css" />
+</head>
+<body>
+
+  <div class="container">
+    {{> header }}
+
+    <header class="page-header">
+      <h1>Hello {{ name }}, <small>Welcome back</small></h1>
+    </header>
+
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci magna, pellentesque a mollis vitae, fringilla et dolor. Sed nec placerat orci. Aenean accumsan, metus in pharetra molestie, purus nunc pretium tortor, non convallis metus quam ut turpis. Donec vel sollicitudin turpis. Nullam convallis dolor mattis eros pellentesque, id pharetra lacus egestas. Sed vitae dictum augue, ac eleifend magna. Mauris aliquet posuere vulputate. Maecenas risus massa, placerat ac ultricies id, rhoncus at felis. Nulla posuere malesuada urna, pharetra varius nisi blandit a.</p>
+
+    <p>Nam tincidunt dui tincidunt ante tempus suscipit. Vivamus sit amet sollicitudin nibh. Vivamus mollis purus quis mi luctus, sed condimentum arcu scelerisque. Morbi sed lorem mollis, euismod neque at, egestas nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ac turpis sed erat scelerisque commodo. Vestibulum ornare mi et tincidunt facilisis. Cras non auctor urna. Sed consequat vitae lacus quis auctor. Nullam aliquet lacus augue, eu fermentum justo iaculis eget. Aenean venenatis odio velit, in posuere eros laoreet ac. Proin accumsan justo nec purus vestibulum commodo. Integer dapibus fringilla eleifend. Donec aliquet pellentesque est id venenatis.</p>
+
+    {{> footer }}
+  </div>
+
+</body>
+</html>
