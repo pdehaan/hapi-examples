@@ -1,6 +1,6 @@
 # hapi-views example
 
-The following example shows how you can use partials and views in Hapi using Handlebars.
+The following example shows how you can use partials and views in [Hapi](http://hapijs.com/) using [Handlebars](http://handlebarsjs.com/).
 
 ## Getting started
 
