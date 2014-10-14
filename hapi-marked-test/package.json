@@ -1,0 +1,26 @@
+{
+  "name": "hapi-marked-test",
+  "description": "Testing Markdown parsing w/ marked and Hapi.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": "https://github.com/pdehaan/hapi-examples/issues",
+  "dependencies": {
+    "hapi": "7.0.0",
+    "marked": "0.3.2"
+  },
+  "devDependencies": {
+    "eslint": "0.8.2"
+  },
+  "homepage": "https://github.com/pdehaan/hapi-examples",
+  "keywords": [
+    "hapi",
+    "marked"
+  ],
+  "license": "WTFPL",
+  "main": "server.js",
+  "repository": "pdehaan/hapi-examples",
+  "scripts": {
+    "start": "node server.js",
+    "test": "eslint ."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "hapi-views-nunjucks",
+  "description": "Hapi views with Nunjucks",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": "https://github.com/pdehaan/hapi-examples/issues",
+  "dependencies": {
+    "hapi": "7.0.0",
+    "nunjucks": "1.1.0"
+  },
+  "homepage": "https://github.com/pdehaan/hapi-examples/tree/master/hapi-views-nunjucks",
+  "keywords": [
+    "hapi",
+    "views",
+    "nunjucks"
+  ],
+  "license": "WTFPL",
+  "main": "server.js",
+  "repository": "pdehaan/hapi-examples",
+  "scripts": {
+    "test": "eslint .",
+    "start": "node server.js"
+  }
+}
