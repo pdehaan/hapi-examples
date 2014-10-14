@@ -57,6 +57,12 @@ server.route([{
     notes: 'Renders the /docs/api.md file as HTML.',
     tags: ['api']
   }
+}, {
+  method: 'GET',
+  path: '/characters',
+  handler: function (res, reply) {
+    reply.view('nested/characters');
+  }
 }]);
 
 server.start(function () {
